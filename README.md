@@ -16,10 +16,8 @@ Is it up will run in the background and check to see if your websites are online
 
 3. Copy the script into init.d and set it to run on launch.
 
-    sudo mv up.py /etc/init.d/
+`sudo mv up.py /etc/init.d/`
 
-    sudo +x /etc/init.d/up.py
+`sudo +x /etc/init.d/up.py` 
 
-    sudo update-rc.d up.py defaults
-
-4. Profit.
+`sudo update-rc.d up.py defaults`
