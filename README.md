@@ -15,8 +15,11 @@ Is it up will run in the background and check to see if your websites are online
 2. Add the sites you would like to monitor to the sites list.
 
 3. Copy the script into init.d and set it to run on launch.
+
     sudo mv up.py /etc/init.d/
+
     sudo +x /etc/init.d/up.py
+
     sudo update-rc.d up.py defaults
- 
+
 4. Profit.
