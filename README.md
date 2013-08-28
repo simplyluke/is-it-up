@@ -1,8 +1,8 @@
-# is-it-up
+# Is It Up
 
 #### A simple python script to alert you via email if a website goes offline.
 
-Is it up will run in the background and check to see if your websites are online every 30 minutes.
+Is It Up will run in the background and check to see if your websites are online every 30 minutes.
 
 ### [Dependencies](http://xkcd.com/754/)
 
