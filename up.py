@@ -4,12 +4,18 @@ import requests
 import smtplib
 from time import sleep
 
+#------USER DEFINED VARIABLES---------
 # Gmail login, users of two factor auth will need to generate an application specific password.
 
 email = 'user@gmail.com'
 password = 'password'
+# This defaults to checking your websites every 30 minutes. 
+interval = 30
+sites = ['http://google.com/', 'http://yourcompanysokaywebsite.com/', 'http://yourawesomewebsite.org/']
+#-------END USER VARIABLES------
 
-sites = ['http://google.com/', 'http://simplyluke.com/', 'http://rainforestpartnership.org/']
+i = 30 * 60
+
 def send_mail(site):
     fromaddr = email
     toaddrs = email
@@ -34,4 +40,4 @@ while True:
             send_mail(site)
 
     # Wait 30 minutes
-    sleep(1800)
+    sleep(i)
